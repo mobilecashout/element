@@ -101,6 +101,7 @@
               :disabled-date="disabledDate"
               @changerange="handleChangeRange"
               :first-day-of-week="firstDayOfWeek"
+              :show-week-number="showWeekNumber"
               @pick="handleRangePick">
             </date-table>
           </div>
@@ -127,6 +128,7 @@
               :disabled-date="disabledDate"
               @changerange="handleChangeRange"
               :first-day-of-week="firstDayOfWeek"
+              :show-week-number="showWeekNumber"
               @pick="handleRangePick">
             </date-table>
           </div>
@@ -236,6 +238,7 @@
         visible: '',
         disabledDate: '',
         firstDayOfWeek: 7,
+        showWeekNumber: false,
         minTimePickerVisible: false,
         maxTimePickerVisible: false,
         width: 0

@@ -8,7 +8,7 @@
     :class="{ 'is-week-mode': selectionMode === 'week' }">
     <tbody>
     <tr>
-      <th v-if="showWeekNumber">{{ t('el.datepicker.week') }}</th>
+      <th v-if="showWeekNumber">w</th>
       <th v-for="week in WEEKS">{{ t('el.datepicker.weeks.' + week) }}</th>
     </tr>
     <tr
@@ -122,8 +122,11 @@
           const row = rows[i];
 
           if (this.showWeekNumber) {
-            if (!row[0]) {
-              row[0] = { type: 'week', text: getWeekNumber(new Date(startDate.getTime() + DAY_DURATION * (i * 7 + 1))) };
+            let weekNumber = { type: 'week', text: getWeekNumber(new Date(startDate.getTime() + DAY_DURATION * (i * 7 + 1))) };
+            if (row.length === 8) {
+              row[0] = weekNumber;
+            } else {
+              row.splice(0, 0, weekNumber);
             }
           }
 

@@ -3,6 +3,8 @@
     data() {
       return {
         pickerOptions1: {
+          firstDayOfWeek: 1,
+          showWeekNumber: true,
           shortcuts: [{
             text: 'Today',
             onClick(picker) {
@@ -25,6 +27,8 @@
           }]
         },
         pickerOptions2: {
+          firstDayOfWeek: 1,
+          showWeekNumber: true,
           shortcuts: [{
             text: 'Last week',
             onClick(picker) {
@@ -99,6 +103,8 @@ Basic date picker measured by 'day'.
     data() {
       return {
         pickerOptions1: {
+          firstDayOfWeek: 1,
+          showWeekNumber: true,
           shortcuts: [{
             text: 'Today',
             onClick(picker) {
@@ -211,6 +217,8 @@ Picking a date range is supported.
     data() {
       return {
         pickerOptions2: {
+          firstDayOfWeek: 1,
+          showWeekNumber: true,
           shortcuts: [{
             text: 'Last week',
             onClick(picker) {
