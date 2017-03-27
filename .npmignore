@@ -1,0 +1,17 @@
+/.github/
+/build/
+/examples/
+/node_modules/
+/test/
+/.eslintignore
+/.eslintrc
+/.gitattributes
+/.gitignore
+/.travis.yml
+/CHANGELOG.*
+/components.json
+/element-logo.svg
+/FAQ.md
+/lerna*
+/Makefile
+/yarn.lock
